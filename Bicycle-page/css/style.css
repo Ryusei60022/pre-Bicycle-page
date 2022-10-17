@@ -18,26 +18,32 @@ ul{
 header{
     display: flex;
     justify-content: space-between;
-    padding: 0 295px;
+    padding: 0 296px;
 }
 
 header img{
-    max-width: 100%;
+    width: 120px;
+    height: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 15%;
-    padding-bottom: 5px;
+    /* padding-bottom: 5px; */
 }
 
 header ul{
     display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 header li{
     list-style: none;
     padding-left: 20px;
     font-size: 14px;
-    margin-top: 10px;
+}
+header a{
+    text-decoration: none;
+    color: #24292E;
 }
 
 header li:hover {
@@ -82,13 +88,13 @@ main section.Bicycle h2{
     color: #383E45;
     opacity: 1;
 }
-.About-cotent img{
+.About-content img{
     border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
     width:  100px;       /* ※縦横を同値に */
     height: 100px;       /* ※縦横を同値に */
     margin-right: 30px;
 }
-main .About-cotent{
+main .About-content{
     display: flex;
     justify-content: center;
     margin-top: 70px;
@@ -111,42 +117,47 @@ main p{
 }
 
 /* Bicycle */
-main section.Bicycle{
+.Bicycle h2{
     padding-top: 100px;
 }
-.Bicycle-cotent{
-    display: flex;
-    justify-content: space-between;
-    outline: 1px solid red;
+.Bicycle li img{
+    max-width: 100%;
 }
-.article-content img{
+.Bicycle li h4{
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.Bicycle ul li img{
     padding-left: 16.2px;
-    /* Layout Properties */
-    top: 1163px;
-    left: 230px;
+    /* top: 1163px;
+    left: 230px; */
     width: 263px;
     height: 174px;
-    /* UI Properties */
     background: transparent url('img/bicycle1.png') 0% 0% no-repeat padding-box;
     opacity: 1;
 }
-.article-content{
+.Bicycle ul{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+.Bicycle  ul li  h4{
+    text-align: center;
+}
+.Bicycle ul li p{
+    text-align: center;
+}
+.Bicycle ul li{
+    list-style: none;
+}
 
+/* footer */
+footer{
+    padding-top: 100px;
 }
-.article-text-area h4{
-    font-size: 1rem;
-    margin: 10px 0;
+footer p{
     text-align: center;
+    color: #383E45;
+    font-size: 10px;
 }
-
-.article-text-area p{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    text-align: center;
-}
-/* .article-text-area{
-    text-align: center;
-} */
